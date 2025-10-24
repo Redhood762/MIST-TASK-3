@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>8 Weeks Study Hours Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 id="headline">8 Weeks Study Hours Tracker</h1>
+
+  <div class="all-weeks">
+    <section class="week-section" id="week-1">
+      <h2>Week 1</h2>
+      <div class="inputs">
+        <label>Math: <input type="number" class="hour-input" data-subject="math" value="1" min="0" /></label>
+        <label>Chem: <input type="number" class="hour-input" data-subject="Chem" value="1" min="0" /></label>
+        <label>EVS: <input type="number" class="hour-input" data-subject="EVS" value="1" min="0" /></label>
+        <label>FEE: <input type="number" class="hour-input" data-subject="FEE" value="1" min="0" /></label>
+        <label>EMSB: <input type="number" class="hour-input" data-subject="EMSB" value="1" min="0" /></label>
+        <label>PPS: <input type="number" class="hour-input" data-subject="PPS" value="1" min="0" /></label>
+      </div>
+      <button onclick="updateChart('week-1')">Update Week 1 Chart</button>
+      <div class="pie-chart" id="chart-week-1"></div>
+    </section>
+
+    <section class="week-section" id="week-2">
+      <h2>Week 2</h2>
+      <div class="inputs">
+        <label>Math: <input type="number" class="hour-input" data-subject="math" value="1" min="0" /></label>
+        <label>Chem: <input type="number" class="hour-input" data-subject="Chem" value="1" min="0" /></label>
+        <label>EVS: <input type="number" class="hour-input" data-subject="EVS" value="1" min="0" /></label>
+        <label>FEE: <input type="number" class="hour-input" data-subject="FEE" value="1" min="0" /></label>
+        <label>EMSB: <input type="number" class="hour-input" data-subject="EMSB" value="1" min="0" /></label>
+        <label>PPS: <input type="number" class="hour-input" data-subject="PPS" value="1" min="0" /></label>
+      </div>
+      <button onclick="updateChart('week-2')">Update Week 2 Chart</button>
+      <div class="pie-chart" id="chart-week-2"></div>
+    </section>
+
+    <section class="week-section" id="week-3">
+      <h2>Week 3</h2>
+      <div class="inputs">
+        <label>Math: <input type="number" class="hour-input" data-subject="math" value="1" min="0" /></label>
+        <label>Chem: <input type="number" class="hour-input" data-subject="Chem" value="1" min="0" /></label>
+        <label>EVS: <input type="number" class="hour-input" data-subject="EVS" value="1" min="0" /></label>
+        <label>FEE: <input type="number" class="hour-input" data-subject="FEE" value="1" min="0" /></label>
+        <label>EMSB: <input type="number" class="hour-input" data-subject="EMSB" value="1" min="0" /></label>
+        <label>PPS: <input type="number" class="hour-input" data-subject="PPS" value="1" min="0" /></label>
+      </div>
+      <button onclick="updateChart('week-3')">Update Week 3 Chart</button>
+      <div class="pie-chart" id="chart-week-3"></div>
+    </section>
+
+    <section class="week-section" id="week-4">
+      <h2>Week 4</h2>
+      <div class="inputs">
+        <label>Math: <input type="number" class="hour-input" data-subject="math" value="1" min="0" /></label>
+        <label>Chem: <input type="number" class="hour-input" data-subject="Chem" value="1" min="0" /></label>
+        <label>EVS: <input type="number" class="hour-input" data-subject="EVS" value="1" min="0" /></label>
+        <label>FEE: <input type="number" class="hour-input" data-subject="FEE" value="1" min="0" /></label>
+        <label>EMSB: <input type="number" class="hour-input" data-subject="EMSB" value="1" min="0" /></label>
+        <label>PPS: <input type="number" class="hour-input" data-subject="PPS" value="1" min="0" /></label>
+      </div>
+      <button onclick="updateChart('week-4')">Update Week 4 Chart</button>
+      <div class="pie-chart" id="chart-week-4"></div>
+    </section>
+
+    <section class="week-section" id="week-5">
+      <h2>Week 5</h2>
+      <div class="inputs">
+        <label>Math: <input type="number" class="hour-input" data-subject="math" value="1" min="0" /></label>
+        <label>Chem: <input type="number" class="hour-input" data-subject="Chem" value="1" min="0" /></label>
+        <label>EVS: <input type="number" class="hour-input" data-subject="EVS" value="1" min="0" /></label>
+        <label>FEE: <input type="number" class="hour-input" data-subject="FEE" value="1" min="0" /></label>
+        <label>EMSB: <input type="number" class="hour-input" data-subject="EMSB" value="1" min="0" /></label>
+        <label>PPS: <input type="number" class="hour-input" data-subject="PPS" value="1" min="0" /></label>
+      </div>
+      <button onclick="updateChart('week-5')">Update Week 5 Chart</button>
+      <div class="pie-chart" id="chart-week-5"></div>
+    </section>
+
+    <section class="week-section" id="week-6">
+      <h2>Week 6</h2>
+      <div class="inputs">
+        <label>Math: <input type="number" class="hour-input" data-subject="math" value="1" min="0" /></label>
+        <label>Chem: <input type="number" class="hour-input" data-subject="Chem" value="1" min="0" /></label>
+        <label>EVS: <input type="number" class="hour-input" data-subject="EVS" value="1" min="0" /></label>
+        <label>FEE: <input type="number" class="hour-input" data-subject="FEE" value="1" min="0" /></label>
+        <label>EMSB: <input type="number" class="hour-input" data-subject="EMSB" value="1" min="0" /></label>
+        <label>PPS: <input type="number" class="hour-input" data-subject="PPS" value="1" min="0" /></label>
+      </div>
+      <button onclick="updateChart('week-6')">Update Week 6 Chart</button>
+      <div class="pie-chart" id="chart-week-6"></div>
+    </section>
+
+    <section class="week-section" id="week-7">
+      <h2>Week 7</h2>
+      <div class="inputs">
+        <label>Math: <input type="number" class="hour-input" data-subject="math" value="1" min="0" /></label>
+        <label>Chem: <input type="number" class="hour-input" data-subject="Chem" value="1" min="0" /></label>
+        <label>EVS: <input type="number" class="hour-input" data-subject="EVS" value="1" min="0" /></label>
+        <label>FEE: <input type="number" class="hour-input" data-subject="FEE" value="1" min="0" /></label>
+        <label>EMSB: <input type="number" class="hour-input" data-subject="EMSB" value="1" min="0" /></label>
+        <label>PPS: <input type="number" class="hour-input" data-subject="PPS" value="1" min="0" /></label>
+      </div>
+      <button onclick="updateChart('week-7')">Update Week 7 Chart</button>
+      <div class="pie-chart" id="chart-week-7"></div>
+    </section>
+
+    <section class="week-section" id="week-8">
+      <h2>Week 8</h2>
+      <div class="inputs">
+        <label>Math: <input type="number" class="hour-input" data-subject="math" value="1" min="0" /></label>
+        <label>Chem: <input type="number" class="hour-input" data-subject="Chem" value="1" min="0" /></label>
+        <label>EVS: <input type="number" class="hour-input" data-subject="EVS" value="1" min="0" /></label>
+        <label>FEE: <input type="number" class="hour-input" data-subject="FEE" value="1" min="0" /></label>
+        <label>EMSB: <input type="number" class="hour-input" data-subject="EMSB" value="1" min="0" /></label>
+        <label>PPS: <input type="number" class="hour-input" data-subject="PPS" value="1" min="0" /></label>
+      </div>
+      <button onclick="updateChart('week-8')">Update Week 8 Chart</button>
+      <div class="pie-chart" id="chart-week-8"></div>
+    </section>
+  </div>
+
+  <ul class="color-legend">
+    <li><span class="color-box red"></span>Math</li>
+    <li><span class="color-box yellow"></span>Chem</li>
+    <li><span class="color-box green"></span>EVS</li>
+    <li><span class="color-box blue"></span>FEE</li>
+    <li><span class="color-box violet"></span>EMSB</li>
+    <li><span class="color-box pink"></span>PPS</li>
+  </ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
